@@ -1,0 +1,40 @@
+@use "sass:math";
+//background color
+$primary:rgba(7,193,96,1);
+$secondary:#8c83c5;
+$color_primary_green:rgba(7,193,96,1);
+$color_primary_black:rgba(38,40,44,1);
+$color_primary_bg_green:rgba(7,193,96,.1);
+$color_aux_red:rgba(254,95,96,1);
+$color_aux_bg_red:rgba(254,95,96,.1);
+$color_aux_blue:rgba(64,158,254,1);
+$color_aux_bg_blue:rgba(64,158,254,.1);
+$color_aux_orange:rgba(255,170,0,1);
+$color_aux_bg_orange:rgba(255,170,0,.1);
+
+//text color
+$color_text_333: rgba(51,51,51,1);
+$color_text_666: rgba(102,102,102,1);
+$color_text_999: rgba(153,153,153,1);
+
+//other color
+$color_btn_text: rgba(178,178,178,1);
+$color_disable: rgba(204,204,204,1);
+$color_split_line: rgba(236,236,236,1);
+$color_bg: #eef0f5;
+$color_input_bg: rgba(250,250,250,1);
+
+//font size
+$font_size_11: 11px;
+$font_size_12: 12px;
+$font_size_14: 14px;
+$font_size_16: 16px;
+
+$border: 1px solid #bae4c1;
+$border_color: #bae4c1;
+
+$shadow: 0px 1px 4px rgba(153, 42, 42, 0.04);
+
+@function px2rem($px, $base-font-size: 12px) {
+  @return math.div(round(math.div($px,$base-font-size) * 1000), 1000) * 1rem;
+}
